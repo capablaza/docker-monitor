@@ -7,16 +7,22 @@ Docker monitor is an easy api for get information from your containers
 
 ## Installation
 
-To start you need build the image, to do it this run the next command.
+If you want build the image manually then run the next command:
 
-```bash
+```shell
 docker build -t docker-monitor-img .
+```
+
+In otherwise just you need run:
+
+```shell
+docker pull capablaza/docker-monitor
 ```
 
 Then you need run this image to do this you need run the next command:
 
-```bash
-docker run -d -it --rm -p 5000:5000 -v /var/run/docker.sock:/var/run/docker.sock --name docker-api-con docker-api-logs
+```shell
+docker run -d -it --rm -p 5000:5000 -v /var/run/docker.sock:/var/run/docker.sock --name docker-monitor capablaza/docker-monitor
 ```
 
 ## Usage
