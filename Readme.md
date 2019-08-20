@@ -38,7 +38,7 @@ http://[host]:5000/containers_names
 GET LOG BY CONTAINER NAME
 
 ```
-http://[host]:5000/containers_names
+http://[host]:5000/logs/[container_name]
 ```
 
 
